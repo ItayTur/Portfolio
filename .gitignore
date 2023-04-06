@@ -12,9 +12,6 @@
 /.next/
 /out/
 
-# large files
-assets
-
 # production
 /build
 
