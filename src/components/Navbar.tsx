@@ -1,4 +1,4 @@
-import { logo, menu } from "@/assets";
+import { logo, menu } from "../../public/assets";
 import { styles } from "@/styles/style";
 import Link from "next/link";
 import React, { useState } from "react";
