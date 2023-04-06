@@ -1,9 +1,9 @@
-import React from 'react'
+import { useGLTF } from "@react-three/drei";
+import React from "react";
 
 const Computers = () => {
-  return (
-    <div>Computers</div>
-  )
-}
+  const computer = useGLTF("/desktop_pc/scene.gltf");
+  return <div>Computers</div>;
+};
 
-export default Computers
+export default Computers;
