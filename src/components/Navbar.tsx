@@ -1,5 +1,5 @@
 import { logo, menu } from "../../public/assets";
-import { styles } from "@/styles/style";
+import { styles } from "@/styles/styles";
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
@@ -22,7 +22,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <Image src={logo} alt="logo" className="w-40 h-40 object-contain" />
+          <Image src={logo} alt="logo" className="w-9 h-9 object-contain" />
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (

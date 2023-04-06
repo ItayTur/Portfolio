@@ -5,8 +5,8 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="icon" type="images/svg+xml" href="/logo.svg" />
-        <title>Itay | Portfolio</title>
       </Head>
+      <title>Itay | Portfolio</title>
       <body>
         <Main />
         <NextScript />
