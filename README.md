@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+I would like to acknowledge that the successful completion of this project was made possible with the guidance of the
+
+YouTube tutorial - [`Build and Deploy an Amazing 3D Web Developer Portfolio in React JS | Beginner Three.js Tutorial`](https://www.youtube.com/watch?v=0fYi8SGA20k)
+
+by [`JavaScript Mastery`](https://www.youtube.com/@javascriptmastery)
+
+I would like to give credit to the tutorial. The knowledge and insights gained from it were integral to the successful outcome of this project.
+
 ## Getting Started
 
 First, run the development server:
