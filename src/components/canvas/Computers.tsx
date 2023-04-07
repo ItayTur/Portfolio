@@ -2,6 +2,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { useLoader, Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { OrbitControls, Preload } from "@react-three/drei";
+import Loader from "./Loader";
 
 const Computers = ({ isMobile = false }) => {
   const gltf = useLoader(GLTFLoader, "/desktop_pc/scene.gltf");
@@ -35,7 +36,7 @@ const ComputersCanvas = () => {
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <Suspense fallback={"loading..."}>
+      <Suspense fallback={<Loader />}>
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
