@@ -46,16 +46,8 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
@@ -262,4 +254,14 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const description =
+  "As a web developer, I specialize in creating visually stunning and highly functional websites using programming tools such as React, Graphql, Nextjs, Vercel, and more. My goal is to provide an intuitive, engaging user experience that is easy to navigate. With strong project management and communication skills, I work closely with clients and product managers to understand their needs and deliver projects on time and to their satisfaction. I am committed to continuously learning and evolving to provide the best possible service.";
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  description,
+};

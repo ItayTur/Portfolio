@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 import { styles } from "../styles/styles";
-import { services } from "../consts";
+import { description, services } from "../consts";
 import { fadeIn, textVariant } from "../utils/motion";
 import Section from "./Section";
 
@@ -44,7 +44,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Some text about me
+        {description}
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
