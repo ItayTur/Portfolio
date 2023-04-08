@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 import { styles } from "../styles/styles";
-import { description, services } from "../consts";
+import { Sections, description, services } from "../consts";
 import { fadeIn, textVariant } from "../utils/motion";
 import Section from "./Section";
 
@@ -35,7 +35,7 @@ const ServiceCard = ({
 
 const About = () => {
   return (
-    <Section idName="about">
+    <Section idName={`${Sections.About}`}>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
