@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import {
   mobile,
   backend,
@@ -106,7 +107,16 @@ export const technologies = [
   },
 ];
 
-export const experiences = [
+export type Experience = {
+  title: string;
+  company_name: string;
+  icon: StaticImageData;
+  iconBg: string;
+  date: string;
+  points: string[];
+};
+
+export const experiences: Experience[] = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",
@@ -259,4 +269,5 @@ export const description =
 
 export enum Sections {
   About = "ABOUT",
+  Experience = "EXPERIENCE",
 }

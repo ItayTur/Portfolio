@@ -2,13 +2,14 @@ import { staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion";
 import { styles } from "../styles/styles";
 import { ReactNode } from "react";
+import { Sections } from "@/consts";
 
 const Section = ({
   idName,
   children,
 }: {
-  idName: string;
-  children: ReactNode[];
+  idName: Sections;
+  children: ReactNode;
 }) => {
   return (
     <motion.section

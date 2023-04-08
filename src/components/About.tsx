@@ -35,7 +35,7 @@ const ServiceCard = ({
 
 const About = () => {
   return (
-    <Section idName={`${Sections.About}`}>
+    <Section idName={Sections.About}>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
