@@ -52,7 +52,12 @@ export const services = [
   },
 ];
 
-export const technologies = [
+export type Technology = {
+  name: string;
+  icon: StaticImageData;
+};
+
+export const technologies: Technology[] = [
   {
     name: "HTML 5",
     icon: html,
@@ -270,4 +275,5 @@ export const description =
 export enum Sections {
   About = "ABOUT",
   Experience = "EXPERIENCE",
+  Tech = "TECH",
 }
