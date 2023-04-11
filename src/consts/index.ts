@@ -176,28 +176,36 @@ export const experiences: Experience[] = [
   },
 ];
 
-export const testimonials = [
+export type Feedback = {
+  quote: string;
+  writer: string;
+  writerRole: string;
+  company: string;
+  image: string;
+};
+
+export const feedbacks: Feedback[] = [
   {
-    testimonial:
+    quote:
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
+    writer: "Sara Lee",
+    writerRole: "CFO",
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
-    testimonial:
+    quote:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
+    writer: "Chris Brown",
+    writerRole: "COO",
     company: "DEF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
-    testimonial:
+    quote:
       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
+    writer: "Lisa Wang",
+    writerRole: "CTO",
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
@@ -293,4 +301,5 @@ export enum Sections {
   Experience = "EXPERIENCE",
   Tech = "TECH",
   Works = "WORKS",
+  Feedbacks = "FEEDBACKS",
 }
