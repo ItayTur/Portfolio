@@ -22,6 +22,7 @@
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.9",
     "react-parallax-tilt": "^1.7.126",
     "react-router-dom": "^6.10.0",
     "react-three-fiber": "^6.0.13",

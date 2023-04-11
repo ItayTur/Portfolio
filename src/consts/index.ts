@@ -302,4 +302,5 @@ export enum Sections {
   Tech = "TECH",
   Works = "WORKS",
   Feedbacks = "FEEDBACKS",
+  Contact = "Contact",
 }

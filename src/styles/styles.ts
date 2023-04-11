@@ -12,6 +12,9 @@ const styles = {
     "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
   sectionSubText:
     "sm:text-[18px] text-sm text-secondary uppercase tracking-wider",
+
+  input:
+    "bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium",
 };
 
 export { styles };
