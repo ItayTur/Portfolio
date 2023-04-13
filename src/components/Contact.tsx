@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 import { Sections } from "@/consts";
 import { slideIn } from "@/utils/motion";
@@ -19,9 +20,28 @@ const Contact = () => {
   const {
     handleSubmit,
     register,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm<ContactForm>();
-  const onSubmit = handleSubmit((values) => console.log(values));
+  const onSubmit = handleSubmit(async (values) => {
+    try {
+      await emailjs.send(
+        "service_rkghr9u",
+        "template_pvvdxei",
+        {
+          from_name: values.name,
+          to_name: "Itay",
+          from_email: values.email,
+          to_email: "unlessmusic1@gmail.com",
+          message: values.message,
+        },
+        "JRpYIFFHQNEGLy-P1"
+      );
+      alert("Thank you! I will get back to you soon");
+    } catch (error) {
+      console.error(error);
+      alert(`Opps something went wrong: ${JSON.stringify(error)}`);
+    }
+  });
   return (
     <Section idName={Sections.Contact}>
       <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -65,8 +85,11 @@ const Contact = () => {
                 aria-invalid={Boolean(errors.message)}
               />
             </InputWrapper>
-            <button className="bg-tertiary hover:bg-secondary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary">
-              Send
+            <button
+              disabled={isSubmitting}
+              className="bg-tertiary hover:bg-secondary disabled:bg-secondary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+            >
+              {isSubmitting ? "Sending..." : "Send"}
             </button>
           </form>
         </motion.div>
