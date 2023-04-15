@@ -1,8 +1,6 @@
 import { StaticImageData } from "next/image";
 import {
-  mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -26,18 +24,27 @@ import {
   threejs,
 } from "../../public/assets";
 
-export const navLinks = [
+export enum Sections {
+  About = "About",
+  Experience = "Experience",
+  Tech = "Tech",
+  Work = "Work",
+  Feedbacks = "Feedbacks",
+  Contact = "Contact",
+}
+
+export const navLinks: { id: string; title: Sections }[] = [
   {
     id: "about",
-    title: "About",
+    title: Sections.About,
   },
   {
     id: "work",
-    title: "Work",
+    title: Sections.Work,
   },
   {
     id: "contact",
-    title: "Contact",
+    title: Sections.Contact,
   },
 ];
 
@@ -293,14 +300,5 @@ export const projects = [
 export const aboutDescription =
   "As a web developer, I specialize in creating visually stunning and highly functional websites using programming tools such as React, Graphql, Nextjs, Vercel, and more. My goal is to provide an intuitive, engaging user experience that is easy to navigate. With strong project management and communication skills, I work closely with clients and product managers to understand their needs and deliver projects on time and to their satisfaction. I am committed to continuously learning and evolving to provide the best possible service.";
 
-export const worksDescription =
+export const workDescription =
   "Here you will find a showcase of my practical skills and experience in various web development areas, ranging from frontend and backend development to full-stack web development. Each project entry provides a brief overview of its purpose with links to code repositories and live demos in it. My projects highlight my ability to undertake complex web development tasks and deliver successful outcomes.";
-
-export enum Sections {
-  About = "ABOUT",
-  Experience = "EXPERIENCE",
-  Tech = "TECH",
-  Works = "WORKS",
-  Feedbacks = "FEEDBACKS",
-  Contact = "Contact",
-}

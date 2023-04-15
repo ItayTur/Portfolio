@@ -6,7 +6,7 @@ import {
   Hero,
   Navbar,
   Tech,
-  Works,
+  Work,
   StarsCanvas,
 } from "../components";
 
@@ -20,7 +20,7 @@ export default function Home() {
       <About />
       <Experience />
       <Tech />
-      <Works />
+      <Work />
       <Feedbacks />
       <div className="relative z-0">
         <Contact />

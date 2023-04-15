@@ -1,5 +1,5 @@
 import Tilt from "react-parallax-tilt";
-import { Project, Sections, projects, worksDescription } from "@/consts";
+import { Project, Sections, projects, workDescription } from "@/consts";
 import { styles } from "@/styles/styles";
 import { fadeIn, textVariant } from "@/utils/motion";
 import { motion } from "framer-motion";
@@ -59,9 +59,9 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
+const Work = () => {
   return (
-    <Section idName={Sections.Works}>
+    <Section idName={Sections.Work}>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
@@ -71,7 +71,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-lg max-w-3xl leading-7"
         >
-          {worksDescription}
+          {workDescription}
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">
@@ -83,4 +83,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default Work;
