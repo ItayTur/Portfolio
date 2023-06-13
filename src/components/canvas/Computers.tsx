@@ -31,21 +31,21 @@ const Computers = ({ isMobile = false }) => {
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+  // useEffect(() => {
+  //   const mediaQuery = window.matchMedia("(max-width: 500px)");
 
-    setIsMobile(mediaQuery.matches);
+  //   setIsMobile(mediaQuery.matches);
 
-    const onMediaQueryChange = (event: MediaQueryListEvent) => {
-      setIsMobile(event.matches);
-    };
+  //   const onMediaQueryChange = (event: MediaQueryListEvent) => {
+  //     setIsMobile(event.matches);
+  //   };
 
-    mediaQuery.addEventListener("change", onMediaQueryChange);
+  //   mediaQuery.addEventListener("change", onMediaQueryChange);
 
-    return () => {
-      mediaQuery.removeEventListener("change", onMediaQueryChange);
-    };
-  }, []);
+  //   return () => {
+  //     mediaQuery.removeEventListener("change", onMediaQueryChange);
+  //   };
+  // }, []);
 
   const [initialized, setInitialized] = useState(false);
 
