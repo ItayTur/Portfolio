@@ -22,6 +22,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  tgs,
+  wix,
+  capitolis,
 } from "../../public/assets";
 
 export enum Sections {
@@ -50,12 +53,8 @@ export const navLinks: { id: string; title: Sections }[] = [
 
 export const services = [
   {
-    title: "Web Developer",
+    title: "Full Stack Developer",
     icon: web,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
   },
 ];
 
@@ -130,58 +129,48 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Front-End Developer",
+    company_name: "TGS",
+    icon: tgs,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "December 2018 - February 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built and maintained React-based web applications as my first professional role.",
+      "Implemented responsive UI components and layouts with a strong focus on usability.",
+      "Worked closely with designers and backend developers to deliver production features.",
+      "Gained solid foundations in clean code, component structure, and collaborative development.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Full Stack Developer",
+    company_name: "Wix",
+    icon: wix,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "February 2020 - May 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Core developer of the Wix Google Calendar integration app used by thousands of Wix sites.",
+      "Built scalable React interfaces and backend integrations within Wix’s internal platform.",
+      "Owned features end-to-end: UI, business logic, edge cases, and production readiness.",
+      "Worked in a high-scale environment with real users, performance constraints, and rapid releases.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Senior Full Stack Developer",
+    company_name: "Capitolis",
+    icon: capitolis,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "May 2021 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Leading development of complex financial SaaS dashboards used by top-tier global banks.",
+      "Building high-performance React and Next.js applications with a strong emphasis on UX and reliability.",
+      "Implemented end-to-end testing (Cypress), significantly reducing production bugs and regressions.",
+      "Introduced Sentry error tracking and structured logging, improving observability and incident response.",
+      "Owning features end-to-end across frontend and backend, reducing dependencies and shortening release cycles.",
+      "Working closely with product, QA, and DevOps in a highly regulated, production-critical environment.",
     ],
   },
 ];
+
 
 export type Feedback = {
   quote: string;

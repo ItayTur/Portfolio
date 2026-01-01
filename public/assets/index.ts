@@ -29,7 +29,9 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-
+import tgs from "./TGS.jpg";
+import wix from './wix.jpg'
+import capitolis from './Capitolis.jpeg'
 export {
   logo,
   backend,
@@ -59,4 +61,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  tgs,
+  wix,
+  capitolis,
 };
