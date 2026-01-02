@@ -54,13 +54,6 @@ export const navLinks: { id: string; title: Sections }[] = [
   },
 ];
 
-export const services = [
-  {
-    title: "Full Stack Developer",
-    icon: web,
-  },
-];
-
 export type Technology = {
   name: string;
   icon: StaticImageData;
