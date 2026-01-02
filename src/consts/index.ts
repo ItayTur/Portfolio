@@ -183,7 +183,7 @@ export type Feedback = {
 export const feedbacks: Feedback[] = [
   {
     quote:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "I thought it was impossible to make a website as beautiful as our product, but Itay proved me wrong.",
     writer: "Sara Lee",
     writerRole: "CFO",
     company: "Acme Co",
@@ -191,7 +191,7 @@ export const feedbacks: Feedback[] = [
   },
   {
     quote:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "I've never met a web developer who truly cares about their clients' success like Itay does.",
     writer: "Chris Brown",
     writerRole: "COO",
     company: "DEF Corp",
@@ -199,7 +199,7 @@ export const feedbacks: Feedback[] = [
   },
   {
     quote:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "After Itay optimized our website, our traffic increased by 50%. We can't thank him enough!",
     writer: "Lisa Wang",
     writerRole: "CTO",
     company: "456 Enterprises",
@@ -287,7 +287,14 @@ export const projects = [
 ];
 
 export const aboutDescription =
-  "As a web developer, I specialize in creating visually stunning and highly functional websites using programming tools such as React, Graphql, Nextjs, Vercel, and more. My goal is to provide an intuitive, engaging user experience that is easy to navigate. With strong project management and communication skills, I work closely with clients and product managers to understand their needs and deliver projects on time and to their satisfaction. I am committed to continuously learning and evolving to provide the best possible service.";
+  `I'm a full-stack web developer focused on building high-quality, production-ready web applications.
+I work with modern technologies such as React, Next.js, GraphQL, and cloud platforms like Vercel
+to deliver fast, scalable, and maintainable systems.
+
+I collaborate closely with product managers and stakeholders to understand requirements, make
+clear technical decisions, and deliver reliable solutions on time. I value clean architecture,
+clear communication, and continuous improvement.
+`;
 
 export const workDescription =
   "Here you will find a showcase of my practical skills and experience in various web development areas, ranging from frontend and backend development to full-stack web development. Each project entry provides a brief overview of its purpose with links to code repositories and live demos in it. My projects highlight my ability to undertake complex web development tasks and deliver successful outcomes.";
