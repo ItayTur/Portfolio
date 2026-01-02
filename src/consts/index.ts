@@ -10,10 +10,14 @@ import {
   redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
   figma,
   docker,
+  nextjs,
+  graphql,
+  cypress,
+  sentry,
+  vercel,
   meta,
   starbucks,
   tesla,
@@ -21,7 +25,6 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
   tgs,
   wix,
   capitolis,
@@ -85,6 +88,14 @@ export const technologies: Technology[] = [
     icon: reactjs,
   },
   {
+    name: "Next JS",
+    icon: nextjs,
+  },
+  {
+    name: "GraphQL",
+    icon: graphql,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -97,14 +108,6 @@ export const technologies: Technology[] = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
@@ -115,6 +118,18 @@ export const technologies: Technology[] = [
   {
     name: "docker",
     icon: docker,
+  },
+  {
+    name: "Cypress",
+    icon: cypress,
+  },
+  {
+    name: "Sentry",
+    icon: sentry,
+  },
+  {
+    name: "Vercel",
+    icon: vercel,
   },
 ];
 
