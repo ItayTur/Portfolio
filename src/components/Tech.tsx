@@ -54,8 +54,8 @@ const Tech = () => {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`h-2 rounded-full transition-all duration-300 ${index === currentIndex
-                ? "w-8 bg-[#915EFF]"
-                : "w-2 bg-white/30 hover:bg-white/50"
+                  ? "w-8 bg-[#915EFF]"
+                  : "w-2 bg-white/30 hover:bg-white/50"
                 }`}
               aria-label={`Go to ${technologies[index].name}`}
             />
