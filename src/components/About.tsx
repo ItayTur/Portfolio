@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 import { styles } from "../styles/styles";
-import { Sections, aboutDescription, services } from "../consts";
+import { Sections, aboutDescription } from "../consts";
 import { fadeIn, textVariant } from "../utils/motion";
 import Section from "./Section";
 
@@ -46,11 +46,6 @@ const About = () => {
       >
         {aboutDescription}
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
     </Section>
   );
 };
