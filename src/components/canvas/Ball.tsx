@@ -1,54 +1,21 @@
-import { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import {
-  Decal,
-  Float,
-  OrbitControls,
-  Preload,
-  useTexture,
-} from "@react-three/drei";
-import { StaticImageData } from "next/image";
-import Loader from "./Loader";
-
-const Ball = ({ imgUrl }: { imgUrl: StaticImageData }) => {
-  const [decal] = useTexture([imgUrl.src]);
-  return (
-    <Float speed={1.75} rotationIntensity={1} floatIntensity={1}>
-      <ambientLight intensity={0.25} />
-      <directionalLight position={[0, 0, 0.05]} />
-      <mesh castShadow receiveShadow scale={2.75}>
-        <icosahedronGeometry args={[1, 1]} />
-        <meshStandardMaterial
-          color="#fff8eb"
-          polygonOffset
-          polygonOffsetFactor={-5}
-          flatShading
-        />
-        <Decal
-          position={[0, 0, 1]}
-          rotation={[2 * Math.PI, 0, 6.25]}
-          scale={1}
-          map={decal}
-          flatShading
-        />
-      </mesh>
-    </Float>
-  );
-};
+import Image, { StaticImageData } from "next/image";
 
 const BallCanvas = ({ icon }: { icon: StaticImageData }) => {
   return (
-    <Canvas
-      frameloop="demand"
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true, alpha: true }}
-    >
-      <Suspense fallback={<Loader />}>
-        {/* <OrbitControls enableZoom={false} /> */}
-        <Ball imgUrl={icon} />
-      </Suspense>
-      <Preload all />
-    </Canvas>
+    <div className="w-full h-full flex items-center justify-center group">
+      <div className="relative w-full h-full rounded-3xl bg-gradient-to-br from-[#915EFF]/20 to-[#915EFF]/5 backdrop-blur-sm border border-[#915EFF]/30 p-6 md:p-8 transition-all duration-300 hover:shadow-lg hover:shadow-[#915EFF]/50 hover:border-[#915EFF]/60">
+        <div className="relative w-full h-full">
+          <Image
+            src={icon}
+            alt="Technology icon"
+            fill
+            className="object-contain p-4 transition-transform duration-300"
+            sizes="(max-width: 768px) 256px, 320px"
+          />
+        </div>
+        <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#915EFF]/0 to-[#915EFF]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+      </div>
+    </div>
   );
 };
 
